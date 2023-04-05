@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="icon" type="image/png" href="/635f112f3ea93578100e2e55_Favicon.png" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script>
+            window.global = window;
+        </script>
+        <script type="module">
+            import process from "process";
+            import { Buffer } from "buffer";
+            import EventEmitter from "events";
+
+            window.Buffer = Buffer;
+            window.process = process;
+            window.EventEmitter = EventEmitter;
+        </script>
+        <title>Biconomy</title>
+    </head>
+    <body>
+        <div id="root"></div>
+        <script type="module" src="/src/main.tsx"></script>
+    </body>
+</html>

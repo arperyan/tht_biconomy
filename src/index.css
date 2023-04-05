@@ -1,0 +1,51 @@
+@import url("https://fonts.googleapis.com/css?family=Fredoka");
+
+:root {
+    --color-white: #ffffff;
+    --color-almost-white: #f6f9f9;
+    --color-oxide: #6cead5;
+    --color-dark: #18191d;
+    --color-black: #000000;
+    --color-grey: #ced7d7;
+    --color-border: #e6eaea;
+    --color-slate: #bdc6cf;
+    --color-deep-grey: #4e565c;
+    --color-deep-grey-accessibilty: #4e565c;
+    --color-hover-oxide: #6cead51a;
+    --color-hoover-almost-white: #f6f9f91a;
+
+    --button-box-shadow: -2px 2px 4px rgba(106, 234, 212, 0.5);
+    --box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.04), 0px 2px 1px rgba(85, 98, 98, 0.04);
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+p {
+    margin: 0;
+}
+
+body {
+    font-family: "Fredoka", cursive;
+    background-color: var(--color-grey);
+    height: 100%;
+    font-size: 14px;
+    overflow: auto;
+}
+
+html {
+    height: 100%;
+}
+
+@media (max-width: 56.25em) {
+    body {
+        font-size: 10px;
+        overflow: scroll;
+    }
+}

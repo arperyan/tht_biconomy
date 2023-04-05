@@ -1,0 +1,39 @@
+.container {
+    align-items: center;
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 6px;
+    border: 1px solid var(--color-border);
+    width: clamp(200px, 500px, 800px);
+    box-shadow: var(--box-shadow);
+    background-color: var(--color-white);
+}
+
+h1 {
+    background: linear-gradient(145deg, #fc1f5a 36%, #9e61fe 53%, #1bb9f7 72%);
+    background-size: 160%;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    -webkit-animation: gradient-text-animation 18s ease-in-out infinite;
+    -moz-animation: gradient-text-animation 18s ease-in-out infinite;
+    animation: gradient-text-animation 18s ease-in-out infinite;
+    animation-fill-mode: both;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@media (max-width: 56.25em) {
+    .container {
+        width: 100%;
+    }
+}
